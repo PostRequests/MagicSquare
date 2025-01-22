@@ -4,12 +4,12 @@
 void setColor(int color) {
     std::cout << "\x1b[" << color << 'm';
 }
+
 void setColor(int color1, int color2) {
     std::cout << "\x1b[" << color1 << ';' << color2 << 'm';
 }
-void resetColor() {
-    setColor(0);
-}
+
+void resetColor() { setColor(0); }
 void drawRowChars(int s, char symbol, int color1 ,int color2) {
     (color2) ? setColor(color1, color2) : setColor(color1);
     for (int i = 0; i < s; i++)

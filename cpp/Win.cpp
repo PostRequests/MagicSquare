@@ -8,9 +8,11 @@
 void setCursorPosition(int x, int y) {
     std::cout << "\033[" << y << ";" << x << "H";
 }
+
 void setCursorPosition(Coordinate xy) {
     std::cout << "\033[" << xy.y << ";" << xy.x << "H";
 }
+
 Coordinate getCursorPosition() {
     Coordinate r; //Структура координат
     CONSOLE_SCREEN_BUFFER_INFO csbi; // Создаем структуру для хранения координат курсора
@@ -25,6 +27,7 @@ Coordinate getCursorPosition() {
     }
     return r;
 }
+
 Coordinate getConsoleSize() {
     Coordinate r;
     CONSOLE_SCREEN_BUFFER_INFO csbi;

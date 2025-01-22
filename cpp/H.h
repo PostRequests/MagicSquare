@@ -1,5 +1,7 @@
 #pragma once
 #include "Global.h"
+//ссылка на таблицу символов https://kvodo.ru/tablitsa-cp866.html
+
 /*Draw*/
 /// <summary>
 /// Устанавливаем 1 цвет консоли

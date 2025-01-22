@@ -3,13 +3,11 @@
 #include <Windows.h>
 #include "cpp/H.h"
 #include "cpp/Global.h"
-int main()
-{
-    Coordinate a = getConsoleSize();
-    std::cout << a.x << "  " << a.y;
-    Sleep(2000);
-    setCursorPosition(10, 20);
-    a = getConsoleSize();
-    std::cout << a.x << "  " << a.y;
+
+
+
+
+int main() {
+    int arr[] = { 1, 2, 3, 4, 5 };
     
 }

@@ -28,3 +28,8 @@ void setCursorPosition(Coordinate xy);
 Coordinate getCursorPosition();
 Coordinate getConsoleSize();
 void FullScreenMode();
+/*Matrix*/
+int getMax(int *arr, int s);
+int getMax(int *arr, int rows, int cols);
+int getMin(int* arr, int s);
+int getMin(int* arr, int rows, int cols);

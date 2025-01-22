@@ -3,7 +3,6 @@
 #include <Windows.h>
 #include "cpp/H.h"
 #include "cpp/Global.h"
-
 int main()
 {
     Coordinate a = getConsoleSize();

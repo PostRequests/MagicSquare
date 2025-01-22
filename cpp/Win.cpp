@@ -19,6 +19,10 @@ Coordinate getCursorPosition() {
         r.x = csbi.dwCursorPosition.X;
         r.y = csbi.dwCursorPosition.Y;
     }
+    else {
+        r.x = -1;
+        r.y = -1;
+    }
     return r;
 }
 Coordinate getConsoleSize() {
@@ -29,5 +33,12 @@ Coordinate getConsoleSize() {
         r.x = csbi.srWindow.Right - csbi.srWindow.Left + 1;
         r.y = csbi.srWindow.Bottom - csbi.srWindow.Top + 1;
     }
+    else {
+        r.x = -1;
+        r.y = -1;
+    }
     return r;
+}
+void FullScreenMode() {
+    SendMessage(::GetConsoleWindow(), WM_SYSKEYDOWN, VK_RETURN, 0x20000000);
 }

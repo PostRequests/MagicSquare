@@ -1,5 +1,6 @@
 #pragma once
 #include "Global.h"
+/*Draw*/
 /// <summary>
 /// Устанавливаем 1 цвет консоли
 /// https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
@@ -14,6 +15,9 @@ void setColor(int color);
 void setColor(int color1, int color2);
 /// <summary>/// Сбрасываем все цвета консоли на стандартный/// </summary>
 void resetColor();
+void drawRowChars(int s, char symbol, int color1, int color2 = 0) ;
+void drawRpwChars(int s, char l, char c, char r, int color1, int color2 = 0);
+/*Win*/
 /// <summary> Устанавливаем курсор в нужную позицию </summary>
 /// <param name="x"></param>
 /// <param name="y"></param>
@@ -21,3 +25,4 @@ void setCursorPosition(int x, int y);
 void setCursorPosition(Coordinate xy);
 Coordinate getCursorPosition();
 Coordinate getConsoleSize();
+void FullScreenMode();

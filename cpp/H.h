@@ -1,4 +1,5 @@
 #pragma once
+#include "Global.h"
 /// <summary>
 /// Устанавливаем 1 цвет консоли
 /// https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
@@ -17,3 +18,6 @@ void resetColor();
 /// <param name="x"></param>
 /// <param name="y"></param>
 void setCursorPosition(int x, int y);
+void setCursorPosition(Coordinate xy);
+Coordinate getCursorPosition();
+Coordinate getConsoleSize();

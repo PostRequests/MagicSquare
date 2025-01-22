@@ -128,9 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="cpp\Draw.cpp" />
-    <ClCompile Include="MagicSquare.cpp" />
+    <ClCompile Include="cpp\Win.cpp" />
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cpp\Global.h" />
     <ClInclude Include="cpp\H.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

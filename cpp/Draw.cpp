@@ -17,11 +17,20 @@ void drawRowChars(int s, char symbol, int color1 ,int color2) {
         std::cout << symbol;
 }
 
-void drawRpwChars(int s, char l, char c, char r, int color1, int color2) {
+void drawRowChars(int s, char l, char c, char r, int color1, int color2) {
     if (color1)
         ((color2) ? setColor(color1, color2) : setColor(color1));
     std::cout << l;
     for (int i = 1; i < s - 1; i++)
         std::cout << c;
     std::cout << r;
+}
+
+void drawEmptyRectangle(int posX, int posY, int rows, int cols) {
+    setCursorPosition(posX, posY);
+    for (int r = 0; r < rows; r++) {
+        drawRowChars(cols, ' ');
+        setCursorPosition(posX, posY + r);
+    }
+        
 }

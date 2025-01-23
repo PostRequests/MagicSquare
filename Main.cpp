@@ -4,15 +4,12 @@
 #include "cpp/H.h"
 #include "cpp/Global.h"
 
+#include <vector>
+
 using namespace std;
 int main() {
-	setCursorPosition(0, 0);
-	cout << "o";
-	
-	setCursorPosition(2, 2);
-	cout << "o";
-
-	setCursorPosition(1, 1);
-	cout << "k";
-	setCursorPosition(3, 3);
+	ColorANSI3b col;
+	setColor(col.CyanBG);
+	drawEmptyRectangle(5, 5, 4, 5);
+	resetColor();
 }

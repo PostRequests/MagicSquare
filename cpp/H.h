@@ -25,7 +25,7 @@ void resetColor();
 /// <param name="symbol">Элемент заполнения</param>
 /// <param name="color1">Цвет консоли ANSI</param>
 /// <param name="color2">Цвет консоли ANSI</param>
-void drawRowChars(int s, char symbol, int color1 = 0, int color2 = 0) ;
+void printRowChars(int s, char symbol, int color1 = 0, int color2 = 0) ;
 /// <summary>
 /// Печатает линию
 /// </summary>
@@ -35,8 +35,10 @@ void drawRowChars(int s, char symbol, int color1 = 0, int color2 = 0) ;
 /// <param name="r">Последний символ линии</param>
 /// <param name="color1">Цвет консоли ANSI</param>
 /// <param name="color2">Цвет консоли ANSI</param>
-void drawRowChars(int s, char l, char c, char r, int color1 = 0, int color2 = 0);
-void drawEmptyRectangle(int posX, int posY, int rows, int cols);
+void printRowChars(int s, char l, char c, char r, int color1 = 0, int color2 = 0);
+
+void drawEmptyRectangle(int posX, int posY, int rows, int cols, int color = 0);
+void drawArr(char* arr, int posX, int posY, int rows, int cols, int color1 = 0, int color2 = 0);
 
 /*Win*/
 

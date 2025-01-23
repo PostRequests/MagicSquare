@@ -8,8 +8,6 @@
 
 using namespace std;
 int main() {
-	ColorANSI3b col;
-	setColor(col.CyanBG);
-	drawEmptyRectangle(5, 5, 4, 5);
-	resetColor();
+    drawEmptyRectangle(1, 1, 5, 5, 41);
+    resetColor();
 }

@@ -8,12 +8,12 @@ int getMax(int *arr, int s) {
 	return max;
 }
 int getMax(int *arr, int rows, int cols) {
-    int max = arr[0]; 
-    for (int i = 0; i < rows; ++i) 
-        for (int j = 0; j < cols; ++j) 
-            if (*(arr + i * cols + j) > max) 
-                max = *(arr + i * cols + j); 
-    return max;
+    int r = arr[0]; //Результат
+    for (int i = 0; i < rows; ++i){
+        int maxT = getMax(arr + i * cols, cols);
+        if (maxT  > r) r = maxT;
+    }                
+    return r;
 }
 
 int getMin(int* arr, int s) {

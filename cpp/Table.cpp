@@ -3,6 +3,6 @@
 #include <iostream>
 
 
-void printArrBorder(char  *arr[], int rows, int cols) {
+void printArrBorder(char  *arr, int rows, int cols) {
 	std::cout << "hel";
 }

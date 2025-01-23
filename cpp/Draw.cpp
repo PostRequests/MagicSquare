@@ -10,14 +10,15 @@ void setColor(int color1, int color2) {
 }
 
 void resetColor() { setColor(0); }
-void drawRowChars(int s, char symbol, int color1 ,int color2) {
+
+void printRowChars(int s, char symbol, int color1 ,int color2) {
     if (color1)
         ((color2) ? setColor(color1, color2) : setColor(color1));
     for (int i = 0; i < s; i++)
         std::cout << symbol;
 }
 
-void drawRowChars(int s, char l, char c, char r, int color1, int color2) {
+void printRowChars(int s, char l, char c, char r, int color1, int color2) {
     if (color1)
         ((color2) ? setColor(color1, color2) : setColor(color1));
     std::cout << l;
@@ -26,11 +27,22 @@ void drawRowChars(int s, char l, char c, char r, int color1, int color2) {
     std::cout << r;
 }
 
-void drawEmptyRectangle(int posX, int posY, int rows, int cols) {
+void drawEmptyRectangle(int posX, int posY, int rows, int cols, int color) {
     setCursorPosition(posX, posY);
     for (int r = 0; r < rows; r++) {
-        drawRowChars(cols, ' ');
-        setCursorPosition(posX, posY + r);
+        printRowChars(cols, ' ', color);
+        setCursorPosition(posX, posY + r + 1);
     }
-        
+}
+
+void drawArr(char *arr, int posX, int posY, int rows, int cols, int color1, int color2) {
+    if (color1)
+        ((color2) ? setColor(color1, color2) : setColor(color1));
+    setCursorPosition(posX, posY);
+    for (int i = 0; i < rows; ++i)
+    {
+        for (int j = 0; j < cols; ++j)
+            std::cout << *(arr + i * cols + j);
+        setCursorPosition(posX, posY + i + 1);
+    }
 }

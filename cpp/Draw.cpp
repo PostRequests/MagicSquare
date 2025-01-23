@@ -11,13 +11,15 @@ void setColor(int color1, int color2) {
 
 void resetColor() { setColor(0); }
 void drawRowChars(int s, char symbol, int color1 ,int color2) {
-    (color2) ? setColor(color1, color2) : setColor(color1);
+    if (color1)
+        ((color2) ? setColor(color1, color2) : setColor(color1));
     for (int i = 0; i < s; i++)
         std::cout << symbol;
 }
 
 void drawRpwChars(int s, char l, char c, char r, int color1, int color2) {
-    (color2) ? setColor(color1, color2) : setColor(color1);
+    if (color1)
+        ((color2) ? setColor(color1, color2) : setColor(color1));
     std::cout << l;
     for (int i = 1; i < s - 1; i++)
         std::cout << c;

@@ -23,6 +23,7 @@ int getMin(int* arr, int s) {
             min = arr[i];
     return min;
 }
+
 int getMin(int* arr, int rows, int cols) {
     int max = arr[0];
     for (int i = 0; i < rows; ++i)

@@ -58,3 +58,7 @@ void drawMatrix(int *arr, int rows, int cols, int posX, int posY, int color) {
 void drawMatrix(int* arr, int rows, int cols, Coordinate XY, int color) {
 	drawMatrix(arr, rows, cols, XY.x, XY.y, color);
 }
+
+void drawMatrix(int* arr, int rows, int cols, int color) {
+	drawMatrix(arr, rows, cols, 0, 0, color);
+}

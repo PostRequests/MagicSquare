@@ -50,22 +50,3 @@ struct BorderCP866 {
     const char UH1 = 194; // ┬ верхний горизонтальный одинарный
     const char C1 = 197;  // ┼ центральный одинарный
 };
-
-enum class ColorA3b {
-    BlackBG = 40,
-    BlackFG = 30,
-    RedBG = 41,
-    RedFG = 31,
-    GreenBG = 42,
-    GreenFG = 32,
-    YellowBG = 43,
-    YellowFG = 33,
-    BlueBG = 44,
-    BlueFG = 34,
-    MagentaBG = 45,
-    MagentaFG = 35,
-    CyanBG = 46,
-    CyanFG = 36,
-    WhiteBG = 47,
-    WhiteFG = 37
-};

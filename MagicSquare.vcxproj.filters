@@ -13,22 +13,34 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\lib">
+      <UniqueIdentifier>{6c40f07e-1b0e-4ec3-8a27-b7c6f74b7743}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\MSLib">
+      <UniqueIdentifier>{42a13961-bb31-408e-99e0-29b3a5f157ea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="cpp\Draw.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="cpp\Win.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="cpp\Table.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\lib</Filter>
     </ClCompile>
     <ClCompile Include="cpp\Matrix.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\Table.cpp">
+      <Filter>Исходные файлы\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\Win.cpp">
+      <Filter>Исходные файлы\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="MSLib\MSDraw.cpp">
+      <Filter>Исходные файлы\MSLib</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp\Calculations.cpp">
+      <Filter>Исходные файлы\lib</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -36,6 +48,9 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="cpp\Global.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="MSLib\MS.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

@@ -33,11 +33,28 @@ void printRowChars(int s, char symbol, int color1 = 0, int color2 = 0) ;
 /// <param name="l">Первый символ в линии</param>
 /// <param name="c">Символ который будет заполнять центр линии</param>
 /// <param name="r">Последний символ линии</param>
-/// <param name="color1">Цвет консоли ANSI</param>
-/// <param name="color2">Цвет консоли ANSI</param>
+/// <param name="color1">Цвет консоли ANSI (не обязательный параметр)</param>
+/// <param name="color2">Цвет консоли ANSI (не обязательный параметр)</param>
 void printRowChars(int s, char l, char c, char r, int color1 = 0, int color2 = 0);
-
+/// <summary>
+/// Закрашивает/Удаляет область прямоугольную область
+/// </summary>
+/// <param name="posX">Позиция строки</param>
+/// <param name="posY">Позиция колонки</param>
+/// <param name="rows">Количество закрашиваемых строк</param>
+/// <param name="cols">Количество закрашиваемых колонок</param>
+/// <param name="color">Параметр цвета (указываем только задний фон)</param>
 void drawEmptyRectangle(int posX, int posY, int rows, int cols, int color = 0);
+/// <summary>
+/// Печатаем 2мерный массив по координатам, можно использовать 2 цвета
+/// </summary>
+/// <param name="arr">Указатель на 2мерный массив</param>
+/// <param name="posX">Позиция строки</param>
+/// <param name="posY">Позиция колонки</param>
+/// <param name="rows">Размерность массива в строках</param>
+/// <param name="cols">Размерность массива в колонках</param>
+/// <param name="color1">цвет 1 (не обязательный параметр)</param>
+/// <param name="color2">цвет 2 (не обязательный параметр)</param>
 void drawArr(char* arr, int posX, int posY, int rows, int cols, int color1 = 0, int color2 = 0);
 
 /*Win*/
@@ -98,6 +115,18 @@ int getMin(int* arr, int s);
 /// <param name="cols">Количество столбцов в двумерном массиве</param>
 /// <returns>Минимальное значение, найденное в массиве</returns>
 int getMin(int* arr, int rows, int cols);
+
+/*Table*/
+void printArrBorder(char* arr, int rows, int cols);
+
+/*Calculations*/
+
+/// <summary>
+/// Возвращает количество символов, для записи этого числа в консоль
+/// </summary>
+/// <param name="n">Предоставленное число</param>
+/// <returns>Количество символов для записи числа в консоль</returns>
+int getNumLength(int n);
 
 
 

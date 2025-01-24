@@ -4,5 +4,6 @@
 
 
 void printArrBorder(char  *arr, int rows, int cols) {
-	std::cout << "hel";
+	BorderCP866 bord;
+	printRowChars(cols, bord.LT2, bord.H2, bord.RT2);
 }

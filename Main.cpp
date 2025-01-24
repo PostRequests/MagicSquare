@@ -3,11 +3,16 @@
 #include <Windows.h>
 #include "cpp/H.h"
 #include "cpp/Global.h"
+#include "MSLib/MS.h"
 
-#include <vector>
 
 using namespace std;
 int main() {
-    drawEmptyRectangle(1, 1, 5, 5, 41);
-    resetColor();
+	int arr[4][4];
+	int n = 1; // Порядковый номер
+	for (int r = 0; r < 4; r++)
+		for (int c = 0; c < 4; c++)
+			arr[r][c] = n++;
+	drawMatrix(&arr[0][0], 4, 4, 4, 4, 45);
+	resetColor();
 }

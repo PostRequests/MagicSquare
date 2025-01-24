@@ -127,15 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cpp\Calculations.cpp" />
     <ClCompile Include="cpp\Draw.cpp" />
     <ClCompile Include="cpp\Matrix.cpp" />
     <ClCompile Include="cpp\Table.cpp" />
     <ClCompile Include="cpp\Win.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MSLib\MSDraw.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cpp\Global.h" />
     <ClInclude Include="cpp\H.h" />
+    <ClInclude Include="MSLib\MS.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

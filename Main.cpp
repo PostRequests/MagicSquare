@@ -72,15 +72,18 @@ template<typename T, size_t N>
 void sortBouble(T(&a)[N]) {
 	for (size_t i = 0; i < N; i++)
 	{
+		bool f = true;
 		for (size_t c = 0; c < N-1-i; c++)
 		{
-			if (a[c]>a[c+1])
+			if (a[c] > a[c + 1])
 			{
 				T temp = a[c];
 				a[c] = a[c + 1];
 				a[c + 1] = temp;
 			}
+			else f = false;
 		}
+		if (f) break;
 	}
 }
 

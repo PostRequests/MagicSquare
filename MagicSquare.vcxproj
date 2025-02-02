@@ -134,10 +134,12 @@
     <ClCompile Include="cpp\Win.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MSLib\MSDraw.cpp" />
+    <ClCompile Include="Teach.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cpp\Global.h" />
     <ClInclude Include="cpp\H.h" />
+    <ClInclude Include="Header.h" />
     <ClInclude Include="MSLib\MS.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

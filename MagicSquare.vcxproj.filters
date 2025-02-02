@@ -42,6 +42,9 @@
     <ClCompile Include="cpp\Calculations.cpp">
       <Filter>Исходные файлы\lib</Filter>
     </ClCompile>
+    <ClCompile Include="Teach.cpp">
+      <Filter>Исходные файлы\lib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cpp\H.h">
@@ -51,6 +54,9 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="MSLib\MS.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Header.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
